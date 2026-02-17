@@ -31,23 +31,29 @@ It is built on a **Microservices Architecture**, containerized with **Docker**, 
 
 ## ✨ Key Features
 
-### 1. 🎨 Generative UI (The "Wow" Factor)
+### 1. 🧠 Core Architecture
+Unlike standard RAG pipelines, Nexus Browser implements an **Agentic Workflow** using **LangGraph**:
+1.  **Planner Node:** Deconstructs complex user queries into sub-tasks.
+2.  **Retrieval Node:** Fetches data using **Tavily API** (Web) and **Gemini 1.5** (Reasoning).
+3.  **Cyclic Refinement:** If the retrieved data is insufficient, the agent "loops back" to rewrite the search query autonomously.
+4.  **Generative UI Engine:** Transforms the LLM's raw JSON output into React components (Recharts, Tables) on the fly.
+
+### 2. 🎨 Generative UI (The "Wow" Factor)
 Nexus doesn't just output text. It understands when a user asks for a comparison (e.g., *"Compare Apple vs Microsoft stock"*) and autonomously:
 * Generates a structured JSON payload.
 * Renders an interactive **Bar Chart** or **Comparison Table** on the client side.
 * Powered by **Recharts** and tailored System Prompts.
 
-### 2. 🧠 Autonomous Agent (LangGraph)
-Powered by **LangGraph**, Nexus uses a cyclic state machine:
-* **Plan:** Analyzes the user query.
-* **Act:** Searches the web.
-* **Reflect:** Checks if the data is sufficient. If not, it **loops back** to search again with a better query.
-* **Answer:** Synthesizes the final report with citations.
-
 ### 3. ⚡ Cloud-Native Performance
 * **Backend:** High-performance **FastAPI** (Python) server handling async LLM streams.
 * **Frontend:** **Next.js 14** (React) for Server-Side Rendering (SSR) and streaming UI updates.
 * **Infrastructure:** Fully containerized (**Docker**) and deployed on **Google Cloud Run** (Serverless).
+
+### 4. 🚀 Key Features
+* **🕵️‍♂️ Autonomous Reasoning:** Uses MCP-style agent-to-agent communication to handle multi-step research tasks.
+* **🎨 Generative UI:** Dynamic rendering of interactive charts and comparison tables from text responses.
+* **⚡ Production Scalability:** Microservices architecture deployed on **Google Cloud Run** with Docker.
+* **🔄 Self-Correcting Search:** Automatically detects hallucinations or poor results and triggers a re-search.
 
 ---
 
