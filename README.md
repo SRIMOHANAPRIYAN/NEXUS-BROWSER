@@ -1,8 +1,7 @@
 # Nexus: Autonomous Insight Engine 🧠
 
 > A Next-Gen AI Search Engine capable of deep web research, autonomous reasoning, and **Generative UI** rendering.
-
-<img width="711" height="352" alt="image" src="https://github.com/user-attachments/assets/ca606df3-9071-431d-b502-11a915b2fbfb" />
+> Browser's Interface
 
 ## 💡 What is Nexus?
 
