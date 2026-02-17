@@ -2,6 +2,19 @@
 
 > A Next-Gen AI Search Engine capable of deep web research, autonomous reasoning, and **Generative UI** rendering.
 
+## 💡 What is Nexus?
+
+**Nexus** is not just a chatbot. It is an **Autonomous Research Agent** that bridges the gap between static LLM knowledge and real-time web data. 
+
+Unlike standard search engines that give you links, Nexus:
+1.  **Reads** the live web using the **Tavily API**.
+2.  **Reasons** using **Google Gemini Pro** to filter noise.
+3.  **Visualizes** complex data by dynamically generating **React Components** (Charts, Tables) instead of just text.
+
+It is built on a **Microservices Architecture**, containerized with **Docker**, and deployed on **Google Cloud Run** for auto-scaling performance.
+
+---
+
 # Browser Interface
 
 <img width="1512" height="854" alt="image" src="https://github.com/user-attachments/assets/9533d28e-7310-4ef4-a518-7996cc29259d" />
@@ -13,17 +26,6 @@
 # Graph Visualisation
 
 <img width="1512" height="860" alt="image" src="https://github.com/user-attachments/assets/2ccf3ec2-8fdd-42fc-a13a-e2bf8687b23a" />
-
-## 💡 What is Nexus?
-
-**Nexus** is not just a chatbot. It is an **Autonomous Research Agent** that bridges the gap between static LLM knowledge and real-time web data. 
-
-Unlike standard search engines that give you links, Nexus:
-1.  **Reads** the live web using the **Tavily API**.
-2.  **Reasons** using **Google Gemini Pro** to filter noise.
-3.  **Visualizes** complex data by dynamically generating **React Components** (Charts, Tables) instead of just text.
-
-It is built on a **Microservices Architecture**, containerized with **Docker**, and deployed on **Google Cloud Run** for auto-scaling performance.
 
 ---
 
